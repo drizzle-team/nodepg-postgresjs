@@ -1,0 +1,29 @@
+{
+  "name": "nodepg-postgresjs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/drizzle-team/nodepg-postgresjs.git",
+  "author": "Alex Blokh <aleksandrblokh@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start:docker": "tsx ./src/docker.ts",
+    "start:seed": "tsx ./src/seed.ts",
+    "bench:pg": "tsx ./src/bench-pg.ts",
+    "bench:pg:prepared": "tsx ./src/bench-pgp.ts",
+    "bench:postgresjs": "tsx ./src/bench-postgresjs.ts",
+    "bench:postgresjs:prepared": "tsx ./src/bench-postgresjsp.ts"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^8.0.2",
+    "drizzle-orm": "^0.28.5",
+    "pg": "^8.11.3",
+    "postgres": "^3.3.5"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.10.2",
+    "dockerode": "^3.3.5",
+    "get-port": "^7.0.0",
+    "mitata": "^0.1.6",
+    "tsx": "^3.12.7"
+  }
+}
